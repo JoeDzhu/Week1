@@ -10,6 +10,3 @@ const tail = function(tailArr) {
   return (tailArr === [] ? undefined : tailArr.slice[1]);
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-console.log(assertEqual(words.length, 3));

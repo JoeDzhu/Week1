@@ -1,13 +1,13 @@
-const assertEqual = function(actual, expected) {
-  return (actual === expected ?
-  console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
-  : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`));
-};
-
 const eqArrays = function(arr1, arr2) {
   for (i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) return false;
   } return true;
+};
+
+const assertArraysEqual = function(actual, expected) {
+  return (actual === expected ?
+  console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
+  : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`));
 };
 
 /*to call the function of eqArrays to assertEqual, try this:
@@ -21,6 +21,6 @@ replace result with what it is:eqArrays([], []);
 done.
 */
 
-assertEqual(eqArrays([false], [false]), true);
-assertEqual(eqArrays([1, 2, 3], [14, 44, 5]), false);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertArrayEqual(eqArrays([false], [false]), true);
+assertArrayEqual(eqArrays([1, 2, 3], [14, 44, 5]), false);
+assertArrayEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);

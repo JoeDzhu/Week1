@@ -4,4 +4,4 @@ const eqArrays = function(arr1, arr2) {
   } return true;
 };
 
-//console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
