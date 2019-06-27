@@ -1,7 +1,12 @@
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
-    if(itemsToCount[item]) {
+    //item = 'el 5'
+    //itemsToCount.item 
+    // { 'item': 123 }
+    //itemsToCount['el 5']
+    // { 'hello': 123 }
+    if(itemsToCount.item) {
       if(results[item]) { //this line returns empty object if find the item in itemsToCount.
                           //which is false then jump to the else part and assign a value to
                           // the first item in results.

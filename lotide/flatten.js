@@ -5,6 +5,7 @@ let flatten = function(input) {
     
     if (!Array.isArray(input[i])) {
       newArray.push(input[i]);
+      //console.log(i);
 
     } if (Array.isArray(input)) {
       for (j = 0; j < input[i].length; j++) {

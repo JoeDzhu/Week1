@@ -35,6 +35,7 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 assertArraysEqual(eqArrays(expecedArr,results1),true);
+
 // assertArraysEqual(eqArrays(''),true);
 // this one works, because only passing one arg - empty string/falsy
 // to the eqArrays, arr2 is undefined, so will return true;

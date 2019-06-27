@@ -4,8 +4,11 @@ let result;
 arr.forEach(function(item, index){
   if(callback(item)) {
     result = arr.slice(0, index);
+    // return result;
   }
-}); return result; 
+  // return result;
+});
+  return result; 
 // if use methods, need to see }); then return; (if put return another line
 // it works but style is still an issue)
 
