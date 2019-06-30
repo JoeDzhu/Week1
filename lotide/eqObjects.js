@@ -18,25 +18,19 @@ const eqObjects = function(object1, object2) {
       } else {
         
         for (let key in object1) {
-          if (!Array.isArray(object1[key]) && !Array.isArray(object2[key])) {
+          if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
 
-            if(object1[key] !== object2[key]) {
+            if (object1[key].length !== object2[key].length) {
               return false;
 
             } else {
 
-              if (object1[key].length !== object2[key].length) {
-                return false;
+              for (i = 0; i < object1[key].length; i++) {
 
-              } else {
-
-                for (i = 0; i < object1[key].length; i++) {
-                  if (object1[key][i] !== object2[key][i]) {
-                    return false;
-
-                  } return true;
+                if (object1[key][i] !== object2[key][i]) {
+                  return false;
                 }
-              }
+              } return true;
             }
           }
         }
@@ -49,13 +43,11 @@ const eqObjects = function(object1, object2) {
   const cd = { c: "1", d: ["2", 3] };
   const dc = { d: ["2", 3], c: "1" };
 
-//   // FUNCTION IMPLEMENTATION
-// const assertObjectsEqual = function(actual, expected) {
-//   // Implement me!
-// };
+  // FUNCTION IMPLEMENTATION
+const assertObjectsEqual = function(actual, expected) {
+  const inspect = require('until').inspect;
+
+};
 
   eqObjects(cd, dc);
   console.log(eqObjects(cd, dc)); // => true
-  
-  // const cd2 = { c: "1", d: ["2", 3, 4] };
-  // eqObjects(cd, cd2); // => false
