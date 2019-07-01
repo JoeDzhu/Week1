@@ -37,4 +37,5 @@ expecedArr = [ 'noma', 'Ora' ];
 
 assertArraysEqual(eqArrays(expecedArr,results1),true);
 
+module.exports = findKey;
 

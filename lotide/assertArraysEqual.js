@@ -1,5 +1,6 @@
 const eqArrays = require('./eqArrays');
 
+
 const assertArraysEqual = function(arr1, arr2) {
   if(eqArrays(arr1, arr2)){
     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`)
@@ -20,7 +21,3 @@ now go backwards:
 replace result with what it is:eqArrays([], []);
 done.
 */
-
-// assertArrayEqual(eqArrays([false], [false]), true);
-// assertArrayEqual(eqArrays([1, 2, 3], [14, 44, 5]), false);
-// assertArrayEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);

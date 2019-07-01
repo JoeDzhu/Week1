@@ -24,4 +24,6 @@ const countLetters = function(WordsToCount) {
   return letterCounts;
 };
 
-console.log(countLetters("Hello, olleH."));
+// console.log(countLetters("Hello, olleH."));
+module.exports = countLetters;
+

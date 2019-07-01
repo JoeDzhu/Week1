@@ -13,4 +13,7 @@ let flatten = function(input) {
       }
     }
   } return newArray;
-}; console.log(flatten([1, 2, [3, 4], 5, [6]]));
+}; 
+
+module.exports = flatten;
+// console.log(flatten([1, 2, [3, 4], 5, [6]]));

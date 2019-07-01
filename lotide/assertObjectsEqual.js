@@ -42,10 +42,10 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-
 const assertObjectsEqual = function(actual, expected) {
-  return (actual === expected ?
+  return (aceqObjects(atual, expected) ?
   console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
   : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`));
 };
-console.log(assertObjectsEqual(eqObjects(cd,dc), false));
+
+module.exports = assertObjectsEqual;
