@@ -1,4 +1,4 @@
-// it is working but I don't know why it is working! By the way, break is for loops not conditionals.
+// Break is for loops not conditionals. Don't really know why it is working.
 let flatten = function(input) {
   let newArray = [];
   for (i = 0; i < input.length; i++) {

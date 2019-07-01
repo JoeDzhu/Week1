@@ -1,0 +1,21 @@
+{
+  "name": "@joezhu/lotide",
+  "version": "1.0.0",
+  "description": "a mini clone for Lodash done in Lighthouse Labs",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Joe Zhu",
+  "email": "realzhoushifu@gmail.com",
+  "license": "ISC"
+}

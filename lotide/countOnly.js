@@ -41,7 +41,3 @@ module.exports = countOnly;
 //   console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
 //   : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`));
 // };
-
-// assertEqual(result1["Jason"], undefined);
-// assertEqual(result1["Karima"], undefined);
-// assertEqual(result1["Fang"], 2);
